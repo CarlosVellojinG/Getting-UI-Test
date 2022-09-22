@@ -1,0 +1,27 @@
+//Testing
+//My little test app is intended to get input as a string and makes the appropriate data conversion.
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+void DisplayApplicationInformation(); 
+void DisplayDivider(string);
+string GetInput(string message);
+void TerminateApplication();
+
+int main()
+{
+	//Variables declaration
+	string name;
+	string input;
+	int age;
+	double mileage;
+
+	DisplayApplicationInformation();//call DisplayApplicationInformation
+	DisplayDivider("Start Program");//call Displaydivider
+
+	DisplayDivider("Get Name");
+	name = GetInput("Your Name");
+	cout << "Your name is " << name << endl;
