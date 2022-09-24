@@ -25,3 +25,40 @@ int main()
 	DisplayDivider("Get Name");
 	name = GetInput("Your Name");
 	cout << "Your name is " << name << endl;
+	
+	DisplayDivider("Get Age");
+	input = GetInput("Your Age");
+	age = atoi(input.c_str());
+	cout << "Your age is" << age << endl;
+
+	DisplayDivider("Get Mileage");
+	input = GetInput("Your mileage");
+	mileage = atof(input.c_str());
+	cout << "Your car MPG is: " << mileage << endl;
+
+	TerminateApplication();//End of the main program
+}
+
+void DisplayApplicationInformation()// Display procedure
+{
+	cout << "Welcome to my UI Program" << endl;
+	cout << "This program accepts user input as a string, then makes the needed data conversion" << endl;
+}
+
+void DisplayDivider(string OutputTile)// Divider procedure
+{
+	cout << "************************" << OutputTile << "*****************************" << endl;
+}
+
+string GetInput(string inputType)//Function procedure
+{
+	string input;
+	cout << "Enter the " << inputType << ": " ;
+	cin >> input;
+	return input;
+}
+
+void TerminateApplication()//terminateApplication procedure
+{
+	cout << "Thanks for using this awesome UI Program ";
+}
